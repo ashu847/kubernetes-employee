@@ -7,7 +7,7 @@ pipeline {
                         sh 'cp -R helm/* .'
 		        sh 'ls -ltr'
                         sh 'pwd'
-                        sh '/usr/local/bin/helm upgrade --install employee-app employee-management  --set image.repository=registry.hub.docker.com/ashu847/employee-management-react --set image.tag=1.0'
+                        sh '/usr/local/bin/helm upgrade --install employee-app petclinic  --set image.repository=registry.hub.docker.com/ashu847/employee-management-react --set image.tag=1.0'
               			
             }           
         }
