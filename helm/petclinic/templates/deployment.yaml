@@ -14,10 +14,18 @@ spec:
       name: emp-pod
       labels:
         app: employee-app
+      
     spec:
       containers:
       - name: employee-management-container
         image: shubh1sinha/order-management:1.0
+        resources:
+          limits:
+            cpu: '1'
+            memory: '400mi'
+          requests:
+            cpu: '1'
+            memory: '400mi'
 
 
 
