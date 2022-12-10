@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: employee-management-container
-        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        image: shubh1sinha/order-management:1.0
         imagePullPolicy: Always
         resources:
           limits:
