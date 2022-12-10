@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: ashu847/employee-management-react
+  repository: shubh1sinha/order-management
   tag: 1.0
   pullPolicy: IfNotPresent
 
@@ -33,7 +33,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 3000
+  port: 80
 
 ingress:
   enabled: false
