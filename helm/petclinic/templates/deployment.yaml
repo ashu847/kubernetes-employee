@@ -21,10 +21,10 @@ spec:
         image: shubh1sinha/order-management:1.0
         resources:
           limits:
-            cpu: '1'
-            memory: '400Mi'
+            cpu: '100m'
+            memory: '1G'
           requests:
-            cpu: '1'
+            cpu: '2m'
             memory: '400Mi'
 
 
