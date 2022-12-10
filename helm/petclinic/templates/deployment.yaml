@@ -6,34 +6,19 @@ metadata:
   name: employee-management-deployment
 spec:
   replicas: 1
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-  minReadySeconds: 5
-  revisionHistoryLimit: 10
   selector:
     matchLabels:
       app: employee-app
   template:
     metadata:
+      name: emp-pod
       labels:
         app: employee-app
     spec:
       containers:
       - name: employee-management-container
         image: shubh1sinha/order-management:1.0
-        imagePullPolicy: Always
-        resources:
-          limits:
-            cpu: '1'
-            memory: '1G'
-          requests:
-            cpu: '1'
-            memory: '1G'
-        ports:
-        - containerPort: 8181
-      imagePullSecrets:
-      - name: regcred
+
 
 
 
